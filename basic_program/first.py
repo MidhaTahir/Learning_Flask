@@ -15,5 +15,5 @@ def home():
     
 if __name__ == '__main__':
     #open cmd write ipconfig copy IPv4 Address and paste it in host below to make it visible in mobile too (remember to off your firewall private and public networks)
-    app.run(debug=True,host='192.168.1.105')
+    app.run(debug=True,host='---------')
 
