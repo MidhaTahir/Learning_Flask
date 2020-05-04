@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+<!-- Title -->
+{% block title %}
+Flask Beginners
+{% endblock %}
+
+<!-- Body -->
+{% block body %}
+
+
+<!-- Image in jinja template -->
+<img src="{{url_for('static',filename='images/endpoint.png')}}" alt="img"> 
+<br>
+
+<!-- For loop with list  -->
+<ul>
+{% for fruit in fruits %}
+    <li>{{fruit}}</li>
+    {% endfor %}
+</ul>
+
+<!-- IF else in jinja -->
+{% if 'Mango' in fruits %}
+<p>We have a mango!</p>
+{% else %}
+<p>Mango doesn't exist</p>
+{% endif %}
+
+
+
+{% endblock %}
