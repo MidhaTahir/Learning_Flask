@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+<!-- Title -->
+{% block title %}
+CLIENTS
+{% endblock %}
+
+<!-- Body -->
+{% block sub_content %}  
+
+<table border=1 >
+    {% for client in clients %}
+    <tr>
+        <td>{{client.name}}</td>
+        <td>{{client.age}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}

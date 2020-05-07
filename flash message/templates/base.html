@@ -1,0 +1,25 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+Navbar View
+{% endblock %}
+
+{% block navbar %}
+  {% include '_navbar.html' %}
+{% endblock %}
+
+{% block content %}
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  <ul>
+    {% for category,message in messages %}
+    <li class='alert alert-{{category}}'>{{message}}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% endwith %}
+<!-- as block body is in bootstrap thats why putting subcontent -->
+  {% block sub_content %}
+  {% endblock %}
+
+{% endblock %}
