@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+<!-- Title -->
+{% block title %}
+FORM
+{% endblock %}
+
+<!-- Body -->
+{% block body %}
+
+<form action="#" method="POST">
+
+    <table width="300" border="0" cellspacing="1" cellpadding="1">
+      <tr>
+        <td>Password:</td>
+        <td> <input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td>Age: </td>
+        <td><input type="number" name="age"></td>
+      </tr>
+      
+      <tr>
+        <td>&nbsp;</td>
+        <td><input type="submit"></td>
+      </tr>
+    </table>
+    
+    </form>
+{% endblock %}
